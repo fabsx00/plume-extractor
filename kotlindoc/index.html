@@ -1,0 +1,541 @@
+<!DOCTYPE HTML>
+<!--
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 0.21.0"/>
+<link rel="icon" href="https://plume-oss.github.io/plume-extractor/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>README</title>
+
+
+<meta name="description" content="Projects a Java program into a code-property graph which is inserted it into a graph database.">
+
+
+
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://plume-oss.github.io/plume-extractor/Editorial/976e56dd/assets/css/editorial_main.css"  />
+<link rel="stylesheet" type="text/css" href="https://plume-oss.github.io/plume-extractor/Editorial/976e56dd/assets/css/editorial_orchidCustomizations.css"  />
+<link rel="stylesheet" type="text/css" href="https://plume-oss.github.io/plume-extractor/Editorial/976e56dd/assets/css/orchidSearch.css"  />
+<link rel="stylesheet" type="text/css" href="https://plume-oss.github.io/plume-extractor/assets/css/orchidSearch.css"  />
+<!-- end:inject styles -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"0.21.0","baseUrl":"https://plume-oss.github.io/plume-extractor","environment":"prod","version":"0.0.1"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="is-loading">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            
+                <header id="header">
+    <a href="https://plume-oss.github.io/plume-extractor" class="logo">Plume Extractor</a>
+    <ul class="icons">
+    
+    
+        <li>
+            <a href="https://github.com/plume-oss/plume-extractor" class="icon fa-github">
+                <span class="label">github</span>
+            </a>
+        </li>
+    
+    
+    </ul>
+</header>
+
+            
+            
+            
+            
+                <section id="pageContent">
+                    <header class="major"><h2>README</h2></header>
+                    <article>
+                        
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <h1 id="plume-extractor"><a href="#plume-extractor" id="plume-extractor" class="anchor"></a>Plume Extractor</h1>
+<p><a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License" /></a>
+<a href="https://travis-ci.org/plume-oss/plume-extractor"><img src="https://travis-ci.org/plume-oss/plume-extractor.svg?branch=develop" alt="Build Status" /></a>
+<a href="https://codecov.io/gh/plume-oss/plume-extractor"><img src="https://codecov.io/gh/plume-oss/plume-extractor/branch/develop/graph/badge.svg" alt="codecov" /></a></p>
+<p>Converts a Java program, JAR or class file into a code-property graph and inserts it into a graph database to be
+analysed with various program analysis algorithms. The driver used to communicate with each graph database is
+<a href="https://github.com/plume-oss/plume-driver">plume-driver</a>.</p>
+<h2 id="features"><a href="#features" id="features" class="anchor"></a>Features</h2>
+<p>Plume is currently under development. It has the following capabilities:</p>
+<ul>
+<li>Project an intraprocedural AST of a JVM program using JVM bytecode:
+<ul>
+<li>Package/Class/Method hierarchy</li>
+<li>Variable assignments</li>
+<li>Arithmetic</li>
+<li>If-else</li>
+<li>While and do-while</li>
+<li>Ternary operator assignments with primitives</li>
+</ul>
+</li>
+<li>Can project to all graph databases currently supported by <a href="https://github.com/plume-oss/plume-driver">plume-driver</a>.</li>
+<li>Currently, accepts source code, class files (or directories containing either), and JAR files.</li>
+</ul>
+<h2 id="building-from-source"><a href="#building-from-source" id="building-from-source" class="anchor"></a>Building from Source</h2>
+<p>In order to use plume-extractor, one needs to also make use of plume-driver to interface with a given graph database.
+Right now, <code>lib</code> contains the latest stable version of plume-driver. This will be the case until the Plume project can be
+hosted on a Maven repository or similar.</p>
+<pre><code class="language-shell">git clone https://github.com/plume-oss/plume-extractor.git
+cd plume-extractor
+./gradlew jar # For main artifact only
+./gradlew fatJar # For fat jar with dependencies
+</code></pre>
+<p>This will build <code>target/plume-extractor-X.X.X[-all].jar</code> which is imported into your local project. One can choose to use the
+main artifact or fat jar but here is how one can import this into one's Maven or Gradle project respectively. E.g.</p>
+<pre><code class="language-mxml">&lt;dependency&gt;
+  &lt;groupId&gt;za.ac.sun.plume&lt;/groupId&gt;
+  &lt;artifactId&gt;plume-extractor&lt;/artifactId&gt;
+  &lt;version&gt;X.X.X&lt;/version&gt;
+  &lt;scope&gt;system&lt;/scope&gt;
+  &lt;systemPath&gt;${project.basedir}/lib/plume-extractor-X.X.X.jar&lt;/systemPath&gt;
+&lt;/dependency&gt;
+</code></pre>
+<pre><code class="language-groovy">repositories {
+    // ...
+    flatDir {
+        dirs 'lib'
+    }
+}
+dependencies {
+    // ...
+    implementation name: 'plume-extractor-X.X.X'
+}
+</code></pre>
+<h2 id="dependencies"><a href="#dependencies" id="dependencies" class="anchor"></a>Dependencies</h2>
+<h3 id="packages"><a href="#packages" id="packages" class="anchor"></a>Packages</h3>
+<p>The following packages used by plume-extractor:</p>
+<ul>
+<li><code>org.ow2.asm:asm:7.3.1</code></li>
+<li><code>org.ow2.asm:asm-util:7.3.1</code></li>
+<li><code>org.apache.logging.log4j:log4j-core:2.8.2</code></li>
+<li><code>org.apache.logging.log4j:log4j-slf4j-impl:2.8.2</code></li>
+<li><code>za.ac.sun.plume:plume-driver</code> (under <code>lib</code>)</li>
+</ul>
+<p>It is not recommended using the fat jar in your project if using a build tool such as Ant, Maven, Gradle, etc. Rather,
+use the main artifact and add the dependencies manually (in your <code>pom.xml</code>, <code>build.gradle</code>, etc.).</p>
+<h3 id="java-support"><a href="#java-support" id="java-support" class="anchor"></a>Java Support</h3>
+<p>The officially supported versions of Java are the following:</p>
+<ul>
+<li>OpenJDK 8</li>
+<li>OpenJDK 9</li>
+<li>OpenJDK 10</li>
+<li>OpenJDK 11</li>
+</ul>
+<h2 id="quickstart"><a href="#quickstart" id="quickstart" class="anchor"></a>Quickstart</h2>
+<p>We use this directory as the base for the following short tutorial - no build tools required. First, we need a Java
+program to analyze. Here is an example of a file we can create:</p>
+<pre><code class="language-java">public class Example {
+
+	public static void main(String[] args) {
+		int a = 1;
+		int b = 2;
+		if (a &gt; b) {
+			a = b + 1;
+		} else {
+			b -= a + 1;
+		}
+	}
+
+}
+</code></pre>
+<p>For a quick and simple in-memory graph projection of a Java program:</p>
+<pre><code class="language-java">import za.ac.sun.plume.Extractor;
+import za.ac.sun.plume.drivers.TinkerGraphDriver;
+import java.io.File;
+import java.io.IOException;
+
+public class PlumeDemo {
+
+    public static void main(String[] args) {
+        TinkerGraphDriver driver = new TinkerGraphDriver.Builder(&quot;./plume_demo.xml&quot;)
+                                            .createNewGraph(true)
+                                            .build();
+        // Attach the hook to the driver
+        Extractor extractor = new Extractor(driver);
+        File f = new File(&quot;./Example.java&quot;); // or new File(&quot;./Example.class&quot;)
+        // Load the driver with source files, class files, or a directory containing either
+        extractor.load(f);
+        // Project the CPG to the graph database
+        extractor.project();
+        // For the TinkerGraph driver, we can export this graph using the format and 
+        // directory specified in the constructor
+        driver.exportCurrentGraph();
+    }
+
+}
+</code></pre>
+<p>To compile both of these, we can use the <code>build/libs/plume-extractor-X.X.X-all.jar</code> with
+<code>lib/plume-driver-X.X.X-jar-all.jar</code>. This can be combined as:</p>
+<pre><code class="language-bash">javac -cp &quot;.:build/libs/plume-extractor-X.X.X-all.jar:lib/plume-driver-X.X.X-all.jar:&quot; *.java
+java -cp &quot;.:build/libs/plume-extractor-X.X.X-all.jar:lib/plume-driver-X.X.X-all.jar:&quot; PlumeDemo
+</code></pre>
+<p>This exported file can be visualized using tools such as <a href="https://cytoscape.org/">Cytoscape</a>. Using Cytoscape and
+the tree layout, the graph should look something like this:</p>
+<p><img src="https://github.com/DavidBakerEffendi/j2GraPL/blob/media/graphs/GraPLDemo.png?raw=true" alt="Example.java Graph" /></p>
+<h2 id="logging"><a href="#logging" id="logging" class="anchor"></a>Logging</h2>
+<p>All logging can be configured under <code>src/main/resources/log4j2.properties</code>. By default, all logs can be found under
+<code>/tmp/plume</code>.</p>
+
+
+
+<p><b>Roots:</b></p>
+<ul>
+  <li>za.ac.sun.plume</li>
+
+</ul>
+
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+                    </article>
+                </section>
+            
+        </div>
+        <hr>
+
+        <!-- Page Footer -->
+        <div class="inner">
+    <footer id="footer">
+        <div class="clearfix">
+            
+            
+        </div>
+    </footer>
+</div>
+
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+    <div class="inner">
+
+        <!-- Search -->
+        <section id="search" class="alt">
+            <form data-orchid-search="">
+                <input type="text" name="query" id="query" placeholder="Search"/>
+            </form>
+            <div class="box" id="search-results" data-orchid-search-results style="display: none;">
+                <b>Search Results</b>
+                <ul></ul>
+            </div>
+            <div class="box" id="search-progress" data-orchid-search-progress style="display: none;">
+                <div class="loader">Loading...</div>
+            </div>
+        </section>
+
+        <!-- Menu -->
+        <nav id="siteNav" class="menu">
+            <header class="major">
+                <h2>Plume Extractor</h2>
+            </header>
+            <ul class="top-level">
+                
+                    
+    
+    <li>
+        <a class="subheader">API Docs</a>
+    </li>
+    
+
+                
+                    
+    <li>
+        <span class="opener">Classes</span>
+        <ul>
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/graph/astbuilder">ASTBuilder</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/domain/enums/blockbody">BlockBody</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/graph/cfgbuilder">CFGBuilder</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/domain/enums/equality">Equality</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/extractor">Extractor</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/util/extractorconst">ExtractorConst</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/graph/igraphbuilder">IGraphBuilder</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/graph/pdgbuilder">PDGBuilder</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/domain/exceptions/plumecompileexception">PlumeCompileException</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/util/resourcecompilationutil">ResourceCompilationUtil</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/util/sootparserutil">SootParserUtil</a>
+    </li>
+    
+
+        
+        </ul>
+    </li>
+
+                
+                    
+    <li>
+        <span class="opener">Packages</span>
+        <ul>
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume">za.ac.sun.plume</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/domain/enums">za.ac.sun.plume.domain.enums</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/domain/exceptions">za.ac.sun.plume.domain.exceptions</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/graph">za.ac.sun.plume.graph</a>
+    </li>
+    
+
+        
+            
+    
+    <li>
+        <a href="https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/util">za.ac.sun.plume.util</a>
+    </li>
+    
+
+        
+        </ul>
+    </li>
+
+                
+            </ul>
+        </nav>
+        
+
+        <!-- Section -->
+        <section>
+            <p class="text-center">
+                Currently 0.0.1. Created with <a href="https://orchid.run">Orchid </a> and <b>Orchid Editorial Theme</b>.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <p class="copyright text-center">&copy; Plume Extractor. All rights reserved.<br>Design by <a href="https://html5up.net">HTML5 UP</a></p>
+        </footer>
+
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script  src="https://plume-oss.github.io/plume-extractor/Editorial/976e56dd/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script  src="https://plume-oss.github.io/plume-extractor/Editorial/976e56dd/ajax/libs/skel/3.0.1/skel.min.js"></script>
+<script  src="https://plume-oss.github.io/plume-extractor/Editorial/976e56dd/assets/js/editorial_util.js"></script>
+<script  src="https://plume-oss.github.io/plume-extractor/Editorial/976e56dd/assets/js/editorial_main.js"></script>
+<script  src="https://plume-oss.github.io/plume-extractor/Editorial/976e56dd/assets/js/editorial_orchidCustomizations.js"></script>
+<script  src="https://plume-oss.github.io/plume-extractor/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script  src="https://plume-oss.github.io/plume-extractor/lunr/lunr.js"></script>
+<script  src="https://plume-oss.github.io/plume-extractor/assets/js/orchidSearch.js"></script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

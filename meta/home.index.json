@@ -1,0 +1,31 @@
+{
+  "ownKey": "home",
+  "ownPages": [
+    {
+      "reference": {
+        "path": "",
+        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+        "fileName": "",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "https://plume-oss.github.io/plume-extractor"
+      },
+      "description": "",
+      "title": "Home",
+      "content": "<p>Projects a Java program into a code-property graph which is inserted it into a graph database.<\/p>\n"
+    },
+    {
+      "reference": {
+        "path": "",
+        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+        "fileName": "404",
+        "extension": "html",
+        "usePrettyUrl": false,
+        "link": "https://plume-oss.github.io/plume-extractor/404.html"
+      },
+      "description": "",
+      "title": "Not Found",
+      "content": ""
+    }
+  ]
+}

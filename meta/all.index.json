@@ -1,0 +1,325 @@
+{
+  "ownKey": "index",
+  "childrenPages": {"kotlindoc": {
+    "ownKey": "kotlindoc",
+    "childrenPages": {"za": {
+      "ownKey": "za",
+      "childrenPages": {"ac": {
+        "ownKey": "ac",
+        "childrenPages": {"sun": {
+          "ownKey": "sun",
+          "childrenPages": {"plume": {
+            "ownKey": "plume",
+            "childrenPages": {
+              "util": {
+                "ownKey": "util",
+                "childrenPages": {
+                  "sootparserutil": {
+                    "ownKey": "sootparserutil",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc",
+                        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                        "fileName": "za/ac/sun/plume/util/sootparserutil",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/util/sootparserutil"
+                      },
+                      "description": "",
+                      "title": "SootParserUtil",
+                      "content": "<p>determineModifiers<\/p>\n<p>Given the ASM5 access parameter and method name, determines the modifier types.<\/p><p>In Java, all non-static methods are by default \"virtual functions.\" Only methods marked with the keyword final,\nwhich cannot be overridden, along with private methods, which are not inherited, are non-virtual.<\/p>\ndetermineEvaluationStrategy\n<p>Given a parameter signature and context of the parameter, determines the evaluation strategy used.\nTODO: Confirm if these assumptions are true<\/p>\nparseAndFlipEquality\n<p>Parses the jump statement equality and returns the opposite.<\/p>\nisArrayType\n"
+                    }]
+                  },
+                  "resourcecompilationutil": {
+                    "ownKey": "resourcecompilationutil",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc",
+                        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                        "fileName": "za/ac/sun/plume/util/resourcecompilationutil",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/util/resourcecompilationutil"
+                      },
+                      "description": "",
+                      "title": "ResourceCompilationUtil",
+                      "content": "<p>compileJavaFile<\/p>\n<p>Given a path to a Java source file, programmatically compiles the source (.java) file.<\/p>\ncompileJavaFiles\n<p>Given a path to a directory, programmatically compile any .java files found in the directory.<\/p>\ndeleteClassFiles\n<p>Given a path to a directory, programmatically delete any .class files found in the directory.<\/p>\nfetchClassFiles\n<p>Returns a list of all the class files under a given directory recursively.<\/p>\nfetchClassFiles\n<p>Returns a list of all the class files inside of a JAR file.<\/p>\n"
+                    }]
+                  },
+                  "extractorconst": {
+                    "ownKey": "extractorconst",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc",
+                        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                        "fileName": "za/ac/sun/plume/util/extractorconst",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/util/extractorconst"
+                      },
+                      "description": "",
+                      "title": "ExtractorConst",
+                      "content": "<p>PRIMITIVES<\/p>\n<p>BINOPS<\/p>\n<p>BOOLEAN<\/p>\n<p>BYTE<\/p>\n<p>CHAR<\/p>\n<p>DOUBLE<\/p>\n<p>FLOAT<\/p>\n<p>INT<\/p>\n<p>LONG<\/p>\n<p>NULL<\/p>\n<p>SHORT<\/p>\n<p>VOID<\/p>\n<p>ASSIGN<\/p>\n<p>CAST<\/p>\n<p>ENTRYPOINT<\/p>\n<p>IF_ROOT<\/p>\n<p>SWITCH_ROOT<\/p>\n<p>LOOKUP_ROOT<\/p>\n<p>TRUE_TARGET<\/p>\n<p>FALSE_TARGET<\/p>\n<p>RETURN<\/p>\n"
+                    }]
+                  }
+                },
+                "ownPages": [{
+                  "reference": {
+                    "path": "kotlindoc",
+                    "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                    "fileName": "za/ac/sun/plume/util",
+                    "extension": "html",
+                    "usePrettyUrl": true,
+                    "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/util"
+                  },
+                  "description": "",
+                  "title": "za.ac.sun.plume.util",
+                  "content": "<p>ExtractorConst<\/p>\n<p>ResourceCompilationUtil<\/p>\n<p>SootParserUtil<\/p>\n"
+                }]
+              },
+              "domain": {
+                "ownKey": "domain",
+                "childrenPages": {
+                  "enums": {
+                    "ownKey": "enums",
+                    "childrenPages": {
+                      "blockbody": {
+                        "ownKey": "blockbody",
+                        "ownPages": [{
+                          "reference": {
+                            "path": "kotlindoc",
+                            "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                            "fileName": "za/ac/sun/plume/domain/enums/blockbody",
+                            "extension": "html",
+                            "usePrettyUrl": true,
+                            "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/domain/enums/blockbody"
+                          },
+                          "description": "",
+                          "title": "BlockBody",
+                          "content": "<p>METHOD_BODY<\/p>\n<p>IF_ROOT<\/p>\n<p>IF_BODY<\/p>\n<p>ELSE_BODY<\/p>\n"
+                        }]
+                      },
+                      "equality": {
+                        "ownKey": "equality",
+                        "ownPages": [{
+                          "reference": {
+                            "path": "kotlindoc",
+                            "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                            "fileName": "za/ac/sun/plume/domain/enums/equality",
+                            "extension": "html",
+                            "usePrettyUrl": true,
+                            "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/domain/enums/equality"
+                          },
+                          "description": "",
+                          "title": "Equality",
+                          "content": "<p>EQ<\/p>\n<p>NE<\/p>\n<p>LT<\/p>\n<p>GE<\/p>\n<p>GT<\/p>\n<p>LE<\/p>\n<p>UNKNOWN<\/p>\n"
+                        }]
+                      }
+                    },
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc",
+                        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                        "fileName": "za/ac/sun/plume/domain/enums",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/domain/enums"
+                      },
+                      "description": "",
+                      "title": "za.ac.sun.plume.domain.enums",
+                      "content": "<p>BlockBody<\/p>\n<p>Equality<\/p>\n"
+                    }]
+                  },
+                  "exceptions": {
+                    "ownKey": "exceptions",
+                    "childrenPages": {"plumecompileexception": {
+                      "ownKey": "plumecompileexception",
+                      "ownPages": [{
+                        "reference": {
+                          "path": "kotlindoc",
+                          "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                          "fileName": "za/ac/sun/plume/domain/exceptions/plumecompileexception",
+                          "extension": "html",
+                          "usePrettyUrl": true,
+                          "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/domain/exceptions/plumecompileexception"
+                        },
+                        "description": "",
+                        "title": "PlumeCompileException",
+                        "content": "<p>Thrown to indicate that Plume was unable to find a suitable compiler to compile the given source code.<\/p><init>\n<p>Thrown to indicate that Plume was unable to find a suitable compiler to compile the given source code.<\/p>\n"
+                      }]
+                    }},
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc",
+                        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                        "fileName": "za/ac/sun/plume/domain/exceptions",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/domain/exceptions"
+                      },
+                      "description": "",
+                      "title": "za.ac.sun.plume.domain.exceptions",
+                      "content": "<p>PlumeCompileException<\/p>\n<p>Thrown to indicate that Plume was unable to find a suitable compiler to compile the given source code.<\/p>\n"
+                    }]
+                  }
+                }
+              },
+              "extractor": {
+                "ownKey": "extractor",
+                "ownPages": [{
+                  "reference": {
+                    "path": "kotlindoc",
+                    "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                    "fileName": "za/ac/sun/plume/extractor",
+                    "extension": "html",
+                    "usePrettyUrl": true,
+                    "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/extractor"
+                  },
+                  "description": "",
+                  "title": "Extractor",
+                  "content": "<p>The main entrypoint of the extractor from which the CPG will be created.<\/p><init>\n<p>The main entrypoint of the extractor from which the CPG will be created.<\/p>\nload\n<p>Loads a single Java class file or directory of class files into the cannon.<\/p>\nproject\n<p>Projects all loaded Java classes currently loaded.<\/p>\n"
+                }]
+              },
+              "graph": {
+                "ownKey": "graph",
+                "childrenPages": {
+                  "cfgbuilder": {
+                    "ownKey": "cfgbuilder",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc",
+                        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                        "fileName": "za/ac/sun/plume/graph/cfgbuilder",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/graph/cfgbuilder"
+                      },
+                      "description": "",
+                      "title": "CFGBuilder",
+                      "content": "<p>The  IGraphBuilder  that constructs the dependence edges in the graph.<\/p><init>\n<p>The  IGraphBuilder  that constructs the dependence edges in the graph.<\/p>\nbuild\n<p>Builds the graph implementing the interface.<\/p>\n"
+                    }]
+                  },
+                  "pdgbuilder": {
+                    "ownKey": "pdgbuilder",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc",
+                        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                        "fileName": "za/ac/sun/plume/graph/pdgbuilder",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/graph/pdgbuilder"
+                      },
+                      "description": "",
+                      "title": "PDGBuilder",
+                      "content": "<p>The  IGraphBuilder  that constructs the program dependence edges in the graph.<\/p><init>\n<p>The  IGraphBuilder  that constructs the program dependence edges in the graph.<\/p>\nbuild\n<p>Builds the graph implementing the interface.<\/p>\n"
+                    }]
+                  },
+                  "astbuilder": {
+                    "ownKey": "astbuilder",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc",
+                        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                        "fileName": "za/ac/sun/plume/graph/astbuilder",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/graph/astbuilder"
+                      },
+                      "description": "",
+                      "title": "ASTBuilder",
+                      "content": "<p>The  IGraphBuilder  that constructs the vertices of the package/file/method hierarchy and connects the AST edges.<\/p><init>\n<p>The  IGraphBuilder  that constructs the vertices of the package/file/method hierarchy and connects the AST edges.<\/p>\nbuild\n<p>Builds the graph implementing the interface.<\/p>\nbuildProgramStructure\n<p>Constructs the file, package, and type information from the given <a href=\"#\">SootClass<\/a>.<\/p>\n"
+                    }]
+                  },
+                  "igraphbuilder": {
+                    "ownKey": "igraphbuilder",
+                    "ownPages": [{
+                      "reference": {
+                        "path": "kotlindoc",
+                        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                        "fileName": "za/ac/sun/plume/graph/igraphbuilder",
+                        "extension": "html",
+                        "usePrettyUrl": true,
+                        "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/graph/igraphbuilder"
+                      },
+                      "description": "",
+                      "title": "IGraphBuilder",
+                      "content": "<p>The interface for classes which build the code property graph from Soot data should implement.<\/p>build\n<p>Builds the graph implementing the interface.<\/p>\n"
+                    }]
+                  }
+                },
+                "ownPages": [{
+                  "reference": {
+                    "path": "kotlindoc",
+                    "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                    "fileName": "za/ac/sun/plume/graph",
+                    "extension": "html",
+                    "usePrettyUrl": true,
+                    "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume/graph"
+                  },
+                  "description": "",
+                  "title": "za.ac.sun.plume.graph",
+                  "content": "<p>ASTBuilder<\/p>\n<p>The  IGraphBuilder  that constructs the vertices of the package/file/method hierarchy and connects the AST edges.<\/p>\nCFGBuilder\n<p>The  IGraphBuilder  that constructs the dependence edges in the graph.<\/p>\nIGraphBuilder\n<p>The interface for classes which build the code property graph from Soot data should implement.<\/p>\nPDGBuilder\n<p>The  IGraphBuilder  that constructs the program dependence edges in the graph.<\/p>\n"
+                }]
+              }
+            },
+            "ownPages": [{
+              "reference": {
+                "path": "kotlindoc",
+                "baseUrl": "https://plume-oss.github.io/plume-extractor",
+                "fileName": "za/ac/sun/plume",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://plume-oss.github.io/plume-extractor/kotlindoc/za/ac/sun/plume"
+              },
+              "description": "",
+              "title": "za.ac.sun.plume",
+              "content": "<p>Extractor<\/p>\n<p>The main entrypoint of the extractor from which the CPG will be created.<\/p>\nza.ac.sun.plume.domain.enums\n<p>za.ac.sun.plume.domain.exceptions<\/p>\n<p>za.ac.sun.plume.graph<\/p>\n<p>za.ac.sun.plume.util<\/p>\n"
+            }]
+          }}
+        }}
+      }}
+    }},
+    "ownPages": [{
+      "reference": {
+        "path": "kotlindoc",
+        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+        "fileName": "",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "https://plume-oss.github.io/plume-extractor/kotlindoc"
+      },
+      "description": "",
+      "title": "README",
+      "content": "<h1 id=\"plume-extractor\"><a href=\"#plume-extractor\" id=\"plume-extractor\" class=\"anchor\"><\/a>Plume Extractor<\/h1>\n<p><a href=\"https://opensource.org/licenses/Apache-2.0\"><img src=\"https://img.shields.io/badge/License-Apache%202.0-blue.svg\" alt=\"License\" /><\/a>\n<a href=\"https://travis-ci.org/plume-oss/plume-extractor\"><img src=\"https://travis-ci.org/plume-oss/plume-extractor.svg?branch=develop\" alt=\"Build Status\" /><\/a>\n<a href=\"https://codecov.io/gh/plume-oss/plume-extractor\"><img src=\"https://codecov.io/gh/plume-oss/plume-extractor/branch/develop/graph/badge.svg\" alt=\"codecov\" /><\/a><\/p>\n<p>Converts a Java program, JAR or class file into a code-property graph and inserts it into a graph database to be\nanalysed with various program analysis algorithms. The driver used to communicate with each graph database is\n<a href=\"https://github.com/plume-oss/plume-driver\">plume-driver<\/a>.<\/p>\n<h2 id=\"features\"><a href=\"#features\" id=\"features\" class=\"anchor\"><\/a>Features<\/h2>\n<p>Plume is currently under development. It has the following capabilities:<\/p>\n<ul>\n<li>Project an intraprocedural AST of a JVM program using JVM bytecode:\n<ul>\n<li>Package/Class/Method hierarchy<\/li>\n<li>Variable assignments<\/li>\n<li>Arithmetic<\/li>\n<li>If-else<\/li>\n<li>While and do-while<\/li>\n<li>Ternary operator assignments with primitives<\/li>\n<\/ul>\n<\/li>\n<li>Can project to all graph databases currently supported by <a href=\"https://github.com/plume-oss/plume-driver\">plume-driver<\/a>.<\/li>\n<li>Currently, accepts source code, class files (or directories containing either), and JAR files.<\/li>\n<\/ul>\n<h2 id=\"building-from-source\"><a href=\"#building-from-source\" id=\"building-from-source\" class=\"anchor\"><\/a>Building from Source<\/h2>\n<p>In order to use plume-extractor, one needs to also make use of plume-driver to interface with a given graph database.\nRight now, <code>lib<\/code> contains the latest stable version of plume-driver. This will be the case until the Plume project can be\nhosted on a Maven repository or similar.<\/p>\n<pre><code class=\"language-shell\">git clone https://github.com/plume-oss/plume-extractor.git\ncd plume-extractor\n./gradlew jar # For main artifact only\n./gradlew fatJar # For fat jar with dependencies\n<\/code><\/pre>\n<p>This will build <code>target/plume-extractor-X.X.X[-all].jar<\/code> which is imported into your local project. One can choose to use the\nmain artifact or fat jar but here is how one can import this into one's Maven or Gradle project respectively. E.g.<\/p>\n<pre><code class=\"language-mxml\">&lt;dependency&gt;\n  &lt;groupId&gt;za.ac.sun.plume&lt;/groupId&gt;\n  &lt;artifactId&gt;plume-extractor&lt;/artifactId&gt;\n  &lt;version&gt;X.X.X&lt;/version&gt;\n  &lt;scope&gt;system&lt;/scope&gt;\n  &lt;systemPath&gt;${project.basedir}/lib/plume-extractor-X.X.X.jar&lt;/systemPath&gt;\n&lt;/dependency&gt;\n<\/code><\/pre>\n<pre><code class=\"language-groovy\">repositories {\n    // ...\n    flatDir {\n        dirs 'lib'\n    }\n}\ndependencies {\n    // ...\n    implementation name: 'plume-extractor-X.X.X'\n}\n<\/code><\/pre>\n<h2 id=\"dependencies\"><a href=\"#dependencies\" id=\"dependencies\" class=\"anchor\"><\/a>Dependencies<\/h2>\n<h3 id=\"packages\"><a href=\"#packages\" id=\"packages\" class=\"anchor\"><\/a>Packages<\/h3>\n<p>The following packages used by plume-extractor:<\/p>\n<ul>\n<li><code>org.ow2.asm:asm:7.3.1<\/code><\/li>\n<li><code>org.ow2.asm:asm-util:7.3.1<\/code><\/li>\n<li><code>org.apache.logging.log4j:log4j-core:2.8.2<\/code><\/li>\n<li><code>org.apache.logging.log4j:log4j-slf4j-impl:2.8.2<\/code><\/li>\n<li><code>za.ac.sun.plume:plume-driver<\/code> (under <code>lib<\/code>)<\/li>\n<\/ul>\n<p>It is not recommended using the fat jar in your project if using a build tool such as Ant, Maven, Gradle, etc. Rather,\nuse the main artifact and add the dependencies manually (in your <code>pom.xml<\/code>, <code>build.gradle<\/code>, etc.).<\/p>\n<h3 id=\"java-support\"><a href=\"#java-support\" id=\"java-support\" class=\"anchor\"><\/a>Java Support<\/h3>\n<p>The officially supported versions of Java are the following:<\/p>\n<ul>\n<li>OpenJDK 8<\/li>\n<li>OpenJDK 9<\/li>\n<li>OpenJDK 10<\/li>\n<li>OpenJDK 11<\/li>\n<\/ul>\n<h2 id=\"quickstart\"><a href=\"#quickstart\" id=\"quickstart\" class=\"anchor\"><\/a>Quickstart<\/h2>\n<p>We use this directory as the base for the following short tutorial - no build tools required. First, we need a Java\nprogram to analyze. Here is an example of a file we can create:<\/p>\n<pre><code class=\"language-java\">public class Example {\n\n\tpublic static void main(String[] args) {\n\t\tint a = 1;\n\t\tint b = 2;\n\t\tif (a &gt; b) {\n\t\t\ta = b + 1;\n\t\t} else {\n\t\t\tb -= a + 1;\n\t\t}\n\t}\n\n}\n<\/code><\/pre>\n<p>For a quick and simple in-memory graph projection of a Java program:<\/p>\n<pre><code class=\"language-java\">import za.ac.sun.plume.Extractor;\nimport za.ac.sun.plume.drivers.TinkerGraphDriver;\nimport java.io.File;\nimport java.io.IOException;\n\npublic class PlumeDemo {\n\n    public static void main(String[] args) {\n        TinkerGraphDriver driver = new TinkerGraphDriver.Builder(&quot;./plume_demo.xml&quot;)\n                                            .createNewGraph(true)\n                                            .build();\n        // Attach the hook to the driver\n        Extractor extractor = new Extractor(driver);\n        File f = new File(&quot;./Example.java&quot;); // or new File(&quot;./Example.class&quot;)\n        // Load the driver with source files, class files, or a directory containing either\n        extractor.load(f);\n        // Project the CPG to the graph database\n        extractor.project();\n        // For the TinkerGraph driver, we can export this graph using the format and \n        // directory specified in the constructor\n        driver.exportCurrentGraph();\n    }\n\n}\n<\/code><\/pre>\n<p>To compile both of these, we can use the <code>build/libs/plume-extractor-X.X.X-all.jar<\/code> with\n<code>lib/plume-driver-X.X.X-jar-all.jar<\/code>. This can be combined as:<\/p>\n<pre><code class=\"language-bash\">javac -cp &quot;.:build/libs/plume-extractor-X.X.X-all.jar:lib/plume-driver-X.X.X-all.jar:&quot; *.java\njava -cp &quot;.:build/libs/plume-extractor-X.X.X-all.jar:lib/plume-driver-X.X.X-all.jar:&quot; PlumeDemo\n<\/code><\/pre>\n<p>This exported file can be visualized using tools such as <a href=\"https://cytoscape.org/\">Cytoscape<\/a>. Using Cytoscape and\nthe tree layout, the graph should look something like this:<\/p>\n<p><img src=\"https://github.com/DavidBakerEffendi/j2GraPL/blob/media/graphs/GraPLDemo.png?raw=true\" alt=\"Example.java Graph\" /><\/p>\n<h2 id=\"logging\"><a href=\"#logging\" id=\"logging\" class=\"anchor\"><\/a>Logging<\/h2>\n<p>All logging can be configured under <code>src/main/resources/log4j2.properties<\/code>. By default, all logs can be found under\n<code>/tmp/plume<\/code>.<\/p>\n"
+    }]
+  }},
+  "ownPages": [
+    {
+      "reference": {
+        "path": "",
+        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+        "fileName": "",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "https://plume-oss.github.io/plume-extractor"
+      },
+      "description": "",
+      "title": "Home",
+      "content": "<p>Projects a Java program into a code-property graph which is inserted it into a graph database.<\/p>\n"
+    },
+    {
+      "reference": {
+        "path": "",
+        "baseUrl": "https://plume-oss.github.io/plume-extractor",
+        "fileName": "404",
+        "extension": "html",
+        "usePrettyUrl": false,
+        "link": "https://plume-oss.github.io/plume-extractor/404.html"
+      },
+      "description": "",
+      "title": "Not Found",
+      "content": ""
+    }
+  ]
+}
