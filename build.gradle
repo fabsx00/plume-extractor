@@ -40,6 +40,8 @@ dependencies {
     orchidRuntime "io.github.javaeden.orchid:OrchidKotlindoc:0.21.0"
     orchidRuntime "io.github.javaeden.orchid:OrchidPluginDocs:0.21.0"
     orchidRuntime "io.github.javaeden.orchid:OrchidGithub:0.21.0"
+
+    implementation 'io.shiftleft:codepropertygraph_2.13:1.2.26'
 }
 
 sourceSets {
